@@ -8,15 +8,9 @@
     "start": "webpack-dev-server --mode development --open --hot ",
     "build": "webpack --mode production",
     "server":"node server.js",
-<<<<<<< HEAD
     "json-server": "json-server --watch public/db.json --port 3001"
   },
   "proxy": "http://localhost:3001",
-=======
-    "json-server": "json-server --watch ./public/db.json --port 3001"
-  },
-    "proxy": "http://localhost:3001",
->>>>>>> 0caf8456b348359340a30e86e3cd0a705a019030
   "keywords": [],
   "author": "",
   "license": "ISC",
