@@ -19,7 +19,7 @@ export const setLoaded = (payload) => {
 
 export const fetchPizzas = (sortBy, category) => (dispatch) => {
   dispatch(setLoaded(false))
-  axios.get(`http://localhost:3001/pizzas?${category !== null ? `category=${category}` : ''}&_sort=${sortBy}&_order=dsc`).then(({ data }) => {
+  axios.get(`https://react-pizza-spa-test.herokuapp.com/pizzas?${category !== null ? `category=${category}` : ''}&_sort=${sortBy}&_order=dsc`).then(({ data }) => {
     dispatch(setPizzas(data)); 
   });
 };
